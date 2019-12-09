@@ -1,21 +1,505 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="{{site.baseurl}}/images/favicon.png">
-  <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <title>WEB4GOOD CRM & CMS SOLUTION</title>
+  <meta name="keywords" content="HTML5,CSS3,Template" />
+  <meta name="description" content="" />
+  <meta name="google-site-verification" content="9Dqi4P1432GFgHM9ADQ81Dbnx-Uz6vdWgCtTCNFP30M" />
+  <!-- mobile settings -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+  <!-- WEB FONTS : use %7C instead of | (pipe) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- CORE CSS -->
+
+  <!-- THEME CSS -->
+  <link href="https://tqsweb.s3.amazonaws.com/2017/01/16/00/32/33/1aa5d460-417c-4fb8-97e1-6a69705463f3/essentials.css" rel="stylesheet" type="text/css" />
+  <link href="https://tqsweb.s3.amazonaws.com/2017/01/16/00/32/51/6b3af0ca-b672-4e8c-a574-a1e470125f5f/layout.css" rel="stylesheet" type="text/css" />
+
+  <!-- PAGE LEVEL SCRIPTS -->
+  <link href="https://tqsweb.s3.amazonaws.com/2017/01/16/00/33/12/b5a32962-0aec-40b6-a916-48bff869a6f0/header-1.css" rel="stylesheet" type="text/css" />
+  <link href="https://tqsweb.s3.amazonaws.com/2017/01/16/00/33/33/51e4f6d1-4005-4d58-acd1-34277440c6bb/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+  <style type="text/css" media="all">
+        .footer-logo {
+    width: 75%;
+}
+.app-preview {
+    width: 100%;
+}
+#footer address .footer-sprite {
+    padding-left: 0px !important;
+}
+#footer .container {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.features i.fa-circle {
+    color: #f3f3f3;
+}
+.testimonals i.fa-circle {
+    color: #eee;
+}
+
+  </style>
+
+
 </head>
-<body class='page {{page.bodyClass}}'>
-  {% include main-menu-mobile.html %}
-  <div id="wrapper" class="wrapper">
-    {% include header.html headerClass='header-extra' %}
-    {{content}}
+
+<body class="smoothscroll enable-animation">
+
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div id="header" class="sticky clearfix">
+
+      <!-- TOP NAV -->
+      <header id="topNav">
+        <div class="container">
+
+          <!-- Mobile Menu Button -->
+          <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Logo -->
+          <a class="logo pull-left" href="index.html">
+            <img src="https://tqsweb.s3.amazonaws.com/2017/01/16/00/36/21/e41d0563-f811-4cb5-a015-59b30b2dec05/logo.png" alt="" />
+          </a>
+          <div class="navbar-collapse pull-right nav-main-collapse collapse">
+            <nav class="nav-main">
+
+              <!-- 
+                .nav-onepage
+                Required for onepage navigation links
+
+                Add .external for an external link!
+              -->
+              <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                <li class="active"><!-- HOME -->
+                  <a href="#home">
+                    HOME
+                  </a>
+                </li>
+                <li><!-- FEATURES -->
+                  <a href="#features">
+                    FEATURES
+                  </a>
+                </li>
+                <li><!-- TESTIMONIALS -->
+                  <a href="#testimonials">
+                    TESTIMONIALS
+                  </a>
+                </li>
+                <li><!-- TESTIMONIALS -->
+                  <a href="#contact">
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
+
+            </nav>
+          </div>
+
+        </div>
+      </header>
+      <!-- /Top Nav -->
+
+    </div>
+
+
+    <!-- HOME -->
+    <section id="home">
+
+      <div class="container text-center">
+
+        <h1 class="nomargin size-50 weight-300 wow fadeInUp" data-wow-delay="0.4s">Best of both worlds</h1>
+        <p class="lead font-lato size-30 wow fadeInUp" data-wow-delay="0.7s">CRM & CMS Solutions for UK non-profit sector</p>
+
+        <div class="margin-top-30">
+          <a target="_blank" href="https://tqsweb.s3.amazonaws.com/2017/01/23/01/37/50/f81d7444-e74e-4f56-9e4d-fef2a7f3a230/web4good-brochure.pdf" class="btn btn-3d btn-lg wow fadeInUp btn-green" data-wow-delay="0.59">
+            <i class="glyphicon glyphicon-download"></i>
+            DOWNLOAD BROUCHURE
+          </a>
+
+          <a href="mailto:info@anka.uk" class="btn btn-3d btn-lg wow fadeInUp btn-red">
+            <i class="glyphicon glyphicon-th-large"></i>
+            REQUEST A DEMO
+          </a>
+        </div>
+
+
+        <div class="row margin-top-100 text-left">
+
+          <div class="col-sm-8">
+            <img class="app-preview" src="https://tqsweb.s3.amazonaws.com/2017/01/16/00/36/50/07785286-9846-4d39-962e-847385423971/responsive-admin.png" alt="product image" />
+          </div>
+
+          <div class="col-sm-4">
+            <h3 class="weight-300">Why <span>web4good?</span></h3>
+
+            <p>web4good is being offered to the nonprofit sector, advantages of using cloud technology.</p>
+
+            <p>With a cloud based system you have;</p>
+
+            <ul class="list-unstyled list-icons">
+              <li><i class="fa fa-check"></i> Lightning fast updates</li>
+              <li><i class="fa fa-check"></i> Latest security technology</li>
+              <li><i class="fa fa-check"></i> Elimination of in- company technological expertise</li>
+              <li><i class="fa fa-check"></i> No need for expensive hardware</li>
+            </ul>
+
+            <hr />
+            <p>Our software has been designed especially for non-profit organisations making it more suitable for your needs.</p>
+
+            <ul class="list-unstyled list-icons">
+              <li><i class="fa fa-check"></i> Intuitive interfaces</li>
+              <li><i class="fa fa-check"></i> Easy to use</li>
+              <li><i class="fa fa-check"></i> Reduction in administrative costs</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /HOME -->
+
+
+
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+
+        <header class="text-center margin-bottom-60">
+          <h2>Our Features</h2>
+          <hr />
+        </header>
+
+        <!-- FEATURED BOXES 3 -->
+        <div class="row features">
+          <div class="col-md-3 col-xs-6">
+            <div class="text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-address-book-o fa-stack-1x"></i>
+              </span>
+              <h4>Contact Module</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-calendar fa-stack-1x"></i>
+              </span>
+              <h4>Event Module</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-money fa-stack-1x"></i>
+              </span>
+              <h4>Donation Module</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="text-center">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-files-o fa-stack-1x"></i>
+              </span>
+              <h4>Asset Management</h4>
+            </div>
+          </div>
+        </div>
+        <!-- /FEATURED BOXES 3 -->
+      </div>
+    </section>
+    <!-- /FEATURES -->
+
+
+
+
+
+
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="alternate">
+      <div class="container">
+
+        <header class="text-center margin-bottom-60">
+          <h2>Testimonials</h2>
+          <hr />
+        </header>
+
+        <!-- 
+          Note: remove class="rounded" from the img for squared image!
+        -->
+        <div class="row margin-bottom-60 testimonals">
+          <div class="col-md-4">
+            <div class="testimonial testimonial-bordered padding-15">
+              <figure class="pull-left">
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-user fa-stack-1x"></i>
+                </span>
+              </figure>
+              <div class="testimonial-content">
+                <p>web4good, as well as increasing our online presence, has enabled us to develop a positive relationship with our members. We’d been having difficulties in updating our website. However, with the new cloud based system,  there has been a tremendous improvement in the management our website.</p>
+                <cite>
+                  Kezban Hussein
+                  <span>Turkish Education Group</span>
+                </cite>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial testimonial-bordered padding-15">
+              <figure class="pull-left">
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-user fa-stack-1x"></i>
+                </span>
+              </figure>
+              <div class="testimonial-content">
+                <p>
+                We are a small charity and we’d been  having problems getting the support from our former IT team. The new system has enabled us to reduce our costs and improve accessibility by eliminating any difficulties that we were accustomed to experiencing
+                </p>
+                <cite>
+                  Abed Moftizadeh
+                  <span>Mother Tongue Supplementary School Partnership</span>
+                </cite>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial testimonial-bordered padding-15">
+              <figure class="pull-left">
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-user fa-stack-1x"></i>
+                </span>
+              </figure>
+              <div class="testimonial-content">
+                <p>We worked together to vastly improve our system and not just our website and membership scheme. We were especially happy with the way they implemented our design onto our website.</p>
+                <cite>
+                  Alistair Joseph
+                  <span>CLight Project Pro International</span>
+                </cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="container">
+        <br />
+
+        <div class="row">
+
+          <div class="col-lg-4">
+
+            <div class="heading-title heading-border-bottom">
+              <h3>About Us</h3>
+            </div>
+
+            <div class="toggle toggle-transparent-body toggle-accordion">
+
+              <div class="toggle active">
+                  <p>web4good is offered by ANKA DIGITAL LIMITED,  a startup company based in London. web4good is being offered to the nonprofit sector using cloud technology. We are relying on our experience gained from working with organisations of various sizes, using web technology.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="heading-title heading-border-bottom">
+              <h3>Advantages</h3>
+            </div>
+
+            <div class="toggle toggle-transparent-body toggle-accordion">
+
+              <div class="toggle active">
+                  <ul>
+                    <li>Specialised for non-profit organisation needs </li>
+                    <li>Easy to use interface</li>
+                    <li>Flexible price structure making it suitable and affordable for all non-profit organisation irrespective of size</li>
+                    <li>Cloud technology giving you solid security and flexibility</li>
+                  </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="heading-title heading-border-bottom">
+              <h3>Specialties</h3>
+            </div>
+
+            <p>
+            The CMS will give you the flexibility to add contents such as text, images and video.
+            This will allow you to present your organization in a desired manner which will reflect your identity.
+            </p>
+            <p>
+            This system will enable you to manage your web content in an efficient and effective manner.
+            </p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- / -->
+
+
+
+    <!-- -->
+    <section class="alternate" id="contact">
+      <div class="container">
+
+        <div class="text-center">
+          <h2 class="wow fadeInUp nomargin" data-wow-delay="0.3s">DO YOU WANT TO KNOW MORE?</h2>
+
+
+          <div class="margin-top-30">
+            <a href="#" class="btn btn-3d btn-lg wow fadeInUp btn-red" data-wow-delay="0.59" data-toggle="modal" data-target="#myModal">
+              <i class="glyphicon glyphicon-envelope"></i>
+              CONTACT US
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- / -->
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <!-- Footer Logo -->
+            <img  class="footer-logo" src="https://tqsweb.s3.amazonaws.com/2017/01/16/00/36/21/e41d0563-f811-4cb5-a015-59b30b2dec05/logo.png" alt="" />
+
+            <!-- Small Description -->
+
+            <!-- Contact Address -->
+            <address>
+              <ul class="list-unstyled">
+                <li class="footer-sprite address">
+                  C/O Ekb Accountancy Services <br>
+                  39-41 North Road, North Road  <br>
+                  London, England, N7 9DP
+                </li>
+                <li class="footer-sprite phone">
+                  Phone: (+44) 7835 102137
+                </li>
+                <li class="footer-sprite email">
+                  <a href="mailto:info@anka.uk">info@anka.uk</a>
+                </li>
+              </ul>
+            </address>
+            <!-- /Contact Address -->
+
+          </div>
+
+          <div class="col-md-3">
+
+            <!-- Latest Blog Post -->
+            <!-- /Latest Blog Post -->
+
+          </div>
+
+          <div class="col-md-2">
+
+            <!-- Links -->
+            <!-- /Links -->
+
+          </div>
+
+          <div class="col-md-4">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          &copy; All Rights Reserved, ANKA DIGITAL LIMITED
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
   </div>
-  {% include footer.html %}
-  {% include sub-footer.html %}
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.js"></script>
-  {% include google-analytics.html %}
+  <!-- /wrapper -->
+
+  <!-- SCROLL TO TOP -->
+  <a href="#" id="toTop"></a>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Contact for web4good demo</h4>
+        </div>
+        <form class="form" role="form" action="/form-data" method="POST">
+          <div class="modal-body">
+            <fieldset>
+              <div class="form-group">
+                <label for="name" class="control-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="" required="">
+                <p class="help-block">Organization Name</p>
+              </div>
+              <div class="form-group">
+                <label for="contact_name" class="control-label">Contact Name</label>
+                <input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="contact_email" class="control-label">Contact Email</label>
+                <input type="text" class="form-control" id="contact_email" name="contact_email" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="contact_phone" class="control-label">Contact Phone</label>
+                <input type="text" class="form-control" id="contact_phone" name="contact_phone" placeholder="">
+              </div>
+            </fieldset>
+          </div>
+          <div class="modal-footer">
+            <a href="" type="button" class="btn btn-default" data-dismiss="modal">Close</a>
+            <input type="submit" class="btn btn-primary" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT FILES -->
+
+  <script type="text/javascript" src="https://tqsweb.s3.amazonaws.com/2017/01/16/00/34/52/1329463d-2b21-404b-a719-ef1f1cd22e91/jquery-2.2.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://tqsweb.s3.amazonaws.com/2017/01/16/00/48/08/a824d906-1362-48d1-8fdf-f0f01841200f/smoothscroll.js"></script>
 </body>
 </html>
